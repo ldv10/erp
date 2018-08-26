@@ -16,8 +16,7 @@ get into erp folder
 
 create virtualenv named erp_env
 
-`pip install -p python3 erp_env`
-
+`virtualenv -p python3 erp_env`
 
 ## Install Dev Server Requirements
 
