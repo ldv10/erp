@@ -16,4 +16,6 @@ models = introspector.generate_models()
 print(models)
 
 Cuopon = models.get('cuopon')
+User = models.get('user')
+Client = models.get('client')
 
