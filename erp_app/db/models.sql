@@ -25,3 +25,18 @@ CREATE TABLE bill (
 	emission_date DATE,
 	payment TEXT
 );
+
+CREATE TABLE inventario  (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	producto_id INTEGER FOREIGN KEY REFERENCES producto(id),
+	cantidad FLOAT(8,4),
+);
+
+CREATE TABLE producto (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	proveedor_id INTEGER FOREIGN KEY REFERENCES proveedor(id),
+	precio_compra FLOAT(8,4),
+	precio_venta FLOAT(8,4),
+	nombre TEXT,
+	descripcion TEXT,
+);
