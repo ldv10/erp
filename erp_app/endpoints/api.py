@@ -30,3 +30,7 @@ def auth_route():
 @app.route('/clients')
 def clients_route():
     return jsonify(client.get_all_clients())
+
+@app.route('/bill')
+def bill_route():
+    return 'Working on bills...'

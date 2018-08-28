@@ -17,3 +17,11 @@ CREATE TABLE client (
 	address TEXT,
 	nit TEXT NOT NULL
 );
+
+CREATE TABLE bill (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	client_id INTEGER FOREIGN KEY REFERENCES client(id),
+	total FLOAT(8,4),
+	emission_date DATE,
+	payment TEXT
+);
