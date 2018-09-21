@@ -1,7 +1,7 @@
 from peewee import SqliteDatabase
 from playhouse.reflection import Introspector
 
-database = SqliteDatabase(
+connection = SqliteDatabase(
     'erp.db',
     pragmas=(
         ('cache_size', -1024 * 64), # 64MB page-cache
@@ -9,14 +9,3 @@ database = SqliteDatabase(
         ('foreign_keys', 1) # Enforce foreign-key contraints
     )
 )
-
-introspector = Introspector.from_database(database)
-models = introspector.generate_models()
-
-print(models)
-
-Cuopon = models.get('cuopon')
-User = models.get('user')
-Client = models.get('client')
-Bill = models.get('bill')
-
