@@ -1,5 +1,7 @@
 # ERP module
 
+[![Build Status](https://travis-ci.org/dasosjt/erp.svg?branch=master)](https://travis-ci.org/dasosjt/erp)
+
 ## Dev Server Setup
 
 install virtualenv
