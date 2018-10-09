@@ -1,5 +1,5 @@
 from locust import HttpLocust
-from tasks import MyTasks
+from MyTasks import MyTasks
 class MyLocust(HttpLocust):
     task_set = MyTasks
     min_wait = 5000
