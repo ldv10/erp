@@ -39,3 +39,4 @@ wrapt==1.10.11
 behave==1.2.6
 parse==1.9.0
 parse-type==0.4.2
+locustio==0.9.0
