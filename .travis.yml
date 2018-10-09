@@ -8,4 +8,5 @@ install:
 script:
   - pytest -q test.py
   - behave ./features
-  - locust -f locustfile.py --host=http://127.0.0.0:5000
+  - locust -f locustfile.py --host=http://127.0.0.0:5000 --no-web -c 3 -r 3 --run-time 0h00m10s
+
