@@ -8,4 +8,4 @@ install:
 script:
   - pytest -q test.py
   - behave ./features
-  - locust locustfile.py
+  - locust -f locustfile.py --host=http://127.0.0.0:5000
