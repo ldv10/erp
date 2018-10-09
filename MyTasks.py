@@ -1,7 +1,7 @@
 from locust import TaskSet, task
 import random
 import string
- class MyTasks(TaskSet):
+class MyTasks(TaskSet):
     @task
     def simple_one(self):
         my_respone = dict()
