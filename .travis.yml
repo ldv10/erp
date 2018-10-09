@@ -8,3 +8,4 @@ install:
 script:
   - pytest -q test.py
   - behave ./features
+  - locust locustfile.py
